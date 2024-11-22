@@ -1,0 +1,19 @@
+<h1>Bike List</h1>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Model</th>
+      <th>Brand</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let bike of bikes">
+      <td>{{ bike.id }}</td>
+      <td>{{ bike.model }}</td>
+      <td>{{ bike.brand }}</td>
+      <td>{{ bike.price }}</td>
+    </tr>
+  </tbody>
+</table>
